@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box; /* Para incluir el padding y el border en el tamaño total del elemento */
+    margin: 0;
+    padding: 0;
+}
+/*reset margen*/
+
+body {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+
+.ancho {
+    max-width: 1200px;
+    margin: auto;
+    border: 1px solid red;
+}
+
+.margen{
+    padding: 15px;
+}
+
+.center{
+    text-align: center;
+}
+
+.contenedor_info{
+    border: 5px solid purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.contenedor_website{
+    border: 2px solid blue;
+    width: 450px;
+    line-height: 20px;
+}
+
+.contenedor_website h1{
+    font-size: 30px;
+    line-height: 40px;
+
+}
+.cotenedor_caracteristicas{
+    border: 2px solid green;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.cotenedor_caracteristicas article{
+    border: 1px solid black;
+    padding: 10px;
+    width: 40%;
+
+}
+
+.cotenedor_caracteristicas h3{
+    padding: 20px 0px;
+}
+S
+.contenedor_info i{
+    font-size: 40px;
+    color: red;
+}
+
+.rojo{
+    color: red;
+}
+
+.btn_negro{
+    display: inline-block;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/*Tablet*/
+
+@media (max-width: 800px) {
+    body{
+        background-color: red;
+    }
+    .contenedor_info{
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    gap: 50px;
+    }
+
+    .contenedor_website{
+    width: 100%;
+}
+
+}
+
+@media (max-width: 480px){
+    body{
+        background-color: blue;
+    }
+    .cotenedor_caracteristicas{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    }
+
+    .cotenedor_caracteristicas article{
+    padding: 10px;
+    width: 100%;
+
+    }
+}
+
+
